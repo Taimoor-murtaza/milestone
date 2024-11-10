@@ -1,0 +1,77 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #910404;
+  }
+  
+  .resume-container {
+    width: 90%;
+    max-width: 700px;
+  }
+  
+  .card {
+    background: #cc6a6a;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(59, 48, 48, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+  
+  h2 {
+    font-size: 1.5em;
+    color: #000000;
+    display: flex;
+    align-items: center;
+  }
+  
+  .icon {
+    font-size: 1.2em;
+    margin-right: 8px;
+  }
+  
+  .profile-picture {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+  }
+  
+  button.toggle-btn {
+    padding: 8px 12px;
+    background-color: #2b4866;
+    color: rgb(190, 132, 132);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  button.toggle-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive Styling */
+  @media (max-width: 600px) {
+    .resume-container {
+      padding: 15px;
+    }
+  
+    .profile-picture {
+      width: 80px;
+      height: 80px;
+    }
+  }
+  

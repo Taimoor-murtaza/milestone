@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editable Dynamic Resume Builder</title>
+    <link rel="stylesheet" href="./styel.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Editable Resume Builder</h1>
+        <form id="resumeForm">
+            <!-- Personal Information Section -->
+            <section>
+                <h2>Personal Information</h2>
+                <label>Name: <input type="text" id="name" placeholder="Name" required /></label>
+                <label>Email: <input type="email" id="email" placeholder="Email" required /></label>
+                <label>Phone: <input type="tel" id="phone" placeholder="#" required /></label>
+                <label>Address: <input type="text" id="address" placeholder="place" /></label>
+            </section>
+
+            <!-- Education Section -->
+            <section>
+                <h2>Education</h2>
+                <label>Degree: <input type="text" id="degree" placeholder="Education" required /></label>
+                <label>Institution: <input type="text" id="institution" placeholder="University of Example" required /></label>
+                <label>Graduation Year: <input type="number" id="graduationYear" placeholder="Year" required /></label>
+            </section>
+
+            <!-- Work Experience Section -->
+            <section>
+                <h2>Work Experience</h2>
+                <label>Job Title: <input type="text" id="jobTitle" placeholder="yes || no" required /></label>
+                
+            </section>
+
+            <!-- Skills Section -->
+            <section>
+                <h2>Skills</h2>
+                <label>Skills: <input type="text" id="skills" placeholder=" (e.g., )" required /></label>
+            </section>
+
+            <button type="button" onclick="generateResume()">Generate Resume</button>
+        </form>
+
+        <!-- Resume Output -->
+        <div id="resumeOutput" class="resume-output"></div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>

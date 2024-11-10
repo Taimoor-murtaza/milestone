@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Professional Resume</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="resume-container">
+    <!-- Personal Information Section -->
+    <section class="personal-info card">
+      <h2><span class="icon"></span>Resume Builder</h2>
+      <img src="./profile.jpeg" alt="Profile Picture" class="profile-picture">
+      <p><strong>Name:</strong> Taimoor Murtaza</p>
+      <p><strong>Contact:</strong> tamoormurtaza263@gmail.com | 03111778997</p>
+      <button class="toggle-btn" data-section="personal-info">Hide Section</button>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education card">
+      <h2><span class="icon"></span> Education</h2>
+      <p><strong>School:</strong> complete</p>
+      <p><strong>collage:</strong> complete</p>
+      
+      <button class="toggle-btn" data-section="education">Hide Section</button>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills card">
+      <h2><span class="icon"></span> Skills</h2>
+      <div id="skills-list">
+        <p>JavaScript</p>
+        <p>TypeScript</p>
+        <p>HTML & CSS</p>
+        <p>React</p>
+      </div>
+      <button class="toggle-btn" data-section="skills">Hide Section</button>
+    </section>
+
+    <!-- Work Experience Section -->
+    <section class="work-experience card">
+      <h2><span class="icon"></span> Work Experience</h2>
+       <p>Fresh</p>
+      <button class="toggle-btn" data-section="work-experience">Hide Section</button>
+    </section>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
